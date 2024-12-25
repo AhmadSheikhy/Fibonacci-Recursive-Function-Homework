@@ -5,11 +5,9 @@ using namespace std;
 
 int Fibo(int x)
 {
-	if (x == 1 || x == 2)
-		return 1;
-	else {
+	if (x < 3)
+		return x-1;
 		return Fibo(x - 1) + Fibo(x - 2);
-	}
 }
 
 int main()
